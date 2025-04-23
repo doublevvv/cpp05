@@ -6,13 +6,13 @@
 #    By: vlaggoun <vlaggoun@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/02 13:42:57 by vlaggoun          #+#    #+#              #
-#    Updated: 2025/04/23 07:52:27 by vlaggoun         ###   ########.fr        #
+#    Updated: 2025/04/23 14:27:54 by vlaggoun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Bureaucrat
 
-SOURCES = Bureaucrat.cpp main.cpp Form.cpp
+SOURCES = Bureaucrat.cpp main.cpp AForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp
 
 SRCS = $(SOURCES)
 

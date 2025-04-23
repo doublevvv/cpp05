@@ -6,7 +6,7 @@
 /*   By: vlaggoun <vlaggoun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 16:27:22 by vlaggoun          #+#    #+#             */
-/*   Updated: 2025/04/23 14:25:25 by vlaggoun         ###   ########.fr       */
+/*   Updated: 2025/04/23 10:57:25 by vlaggoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,18 +80,5 @@ const char *Bureaucrat::GradeTooLowException::what() const throw()
 std::ostream	&operator<< (std::ostream &out, Bureaucrat const &value)
 {
 	return out << value.getName() << ", bureaucrat grade " << value.getGrade();
-}
-
-void	Bureaucrat::signForm(Form &form)
-{
-	try
-	{
-		form.beSigned(*this);
-	}
-	catch(const std::exception& e)
-	{
-		std::cout << _name<< " couldn't sign form " << form.getName() <<  " because " << e.what();
-	}
-
 }
 
